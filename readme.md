@@ -1,4 +1,6 @@
-to use the panel, call it out by pressing alt+space, open the settings by click the the gear icon on the top left
+to use the panel, download the requirements.txt first and then use python main.py
+
+call it out by pressing alt+space, open the settings by click the the gear icon on the top left
 Ask Robin for an api key to put in Gemini's api port
 
 
