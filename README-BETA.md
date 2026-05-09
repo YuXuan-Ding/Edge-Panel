@@ -46,5 +46,5 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 build.bat
 ```
-
+Permission setup needed once: pynput requires System Settings → Privacy & Security → Accessibility → enable it for whichever app launches Python (Terminal, iTerm, etc.). Without that, the global hotkey won't fire. macOS pops up a prompt the first time it's needed.
 Output: `dist\EdgePanel.exe` (one self-contained file, ~150MB).
