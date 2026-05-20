@@ -345,8 +345,9 @@ class EdgePanel(QWidget):
         self._chat_scroll.setVisible(False)
 
         self._chat_holder = QWidget()
+        self._chat_holder.setObjectName("chatholder")
         self._chat_layout = QVBoxLayout(self._chat_holder)
-        self._chat_layout.setContentsMargins(0, 0, 0, 0)
+        self._chat_layout.setContentsMargins(6, 6, 6, 6)
         self._chat_layout.setSpacing(8)
         self._chat_layout.addStretch(1)
         self._chat_scroll.setWidget(self._chat_holder)
@@ -410,6 +411,12 @@ class EdgePanel(QWidget):
             }}
             #topbar, #thumbstrip {{ background: transparent; }}
             #chatscroll {{ background: transparent; border: none; }}
+            #chatscroll > QWidget > QWidget {{ background: transparent; }}
+            #chatholder {{
+                background-color: rgba(18, 18, 22, {a});
+                border-radius: 8px;
+                border: 1px solid rgba(120, 120, 130, {border_a});
+            }}
             QToolButton {{
                 background: rgba(60, 60, 68, {ed_a});
                 color: #f0f0f2;
